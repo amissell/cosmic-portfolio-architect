@@ -50,24 +50,24 @@ const Education = () => {
   const educationItems = [
     {
       degree: "Master of Computer Science",
-      institution: "Tech University",
-      year: "2014 - 2016",
-      description: "Specialized in Human-Computer Interaction and Advanced Web Technologies",
+      institution: "Digital Technology University",
+      year: "2016 - 2018",
+      description: "Focused on Human-Computer Interaction and Advanced Web Technologies",
       achievements: [
-        "Graduated with distinction",
-        "Published research paper on interactive 3D visualizations",
-        "Received department award for innovative thesis project"
+        "Graduated summa cum laude",
+        "Published research on WebGL performance optimization",
+        "Received Outstanding Thesis Award"
       ]
     },
     {
-      degree: "Bachelor of Science in Information Technology",
-      institution: "State University",
-      year: "2010 - 2014",
-      description: "Focused on web development, database management, and user interface design",
+      degree: "Bachelor of Software Engineering",
+      institution: "Tech Institute",
+      year: "2012 - 2016",
+      description: "Specialized in Web Development and UI/UX Design",
       achievements: [
-        "Dean's List for academic excellence",
-        "Led team for university hackathon, winning first place",
-        "Completed internship at leading tech company"
+        "First Class Honors",
+        "Led the university's web development club",
+        "Won Best Project Award at annual tech showcase"
       ]
     },
   ];

@@ -1,10 +1,8 @@
-
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Float, OrbitControls } from "@react-three/drei";
 import { Github, ExternalLink } from "lucide-react";
 
-// 3D Project Icon
 const ProjectIcon = ({ color = "#9b87f5" }) => {
   return (
     <mesh rotation={[0, 0, 0]}>
@@ -24,7 +22,6 @@ const ProjectCard = ({ title, description, tags, image, links, color }) => {
       onMouseLeave={() => setHovered(false)}
     >
       <div className="relative">
-        {/* Project Canvas */}
         <div className="h-[200px] w-full relative">
           <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
             <ambientLight intensity={0.5} />
@@ -43,12 +40,10 @@ const ProjectCard = ({ title, description, tags, image, links, color }) => {
           </Canvas>
         </div>
         
-        {/* Project Info */}
         <div className="p-6">
           <h3 className="text-xl font-semibold mb-2 text-portfolio-charcoal">{title}</h3>
           <p className="text-gray-700 mb-4">{description}</p>
           
-          {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-4">
             {tags.map((tag, index) => (
               <span key={index} className="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-700">
@@ -57,7 +52,6 @@ const ProjectCard = ({ title, description, tags, image, links, color }) => {
             ))}
           </div>
           
-          {/* Links */}
           <div className="flex space-x-4">
             {links.github && (
               <a 
@@ -91,46 +85,42 @@ const ProjectCard = ({ title, description, tags, image, links, color }) => {
 const Projects = () => {
   const projects = [
     {
-      title: "3D Product Configurator",
-      description: "Interactive 3D product visualization tool built with Three.js and React",
-      tags: ["React", "Three.js", "WebGL", "JavaScript"],
-      image: "/placeholder.svg",
+      title: "3D Virtual Gallery",
+      description: "An immersive virtual art gallery built with Three.js and React, featuring interactive exhibitions and real-time collaboration.",
+      tags: ["React", "Three.js", "WebGL", "Socket.io"],
       color: "#9b87f5",
       links: {
-        github: "#",
-        live: "#",
+        github: "https://github.com/johndoe/virtual-gallery",
+        live: "https://virtual-gallery-demo.com",
       },
     },
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured online store with payment processing and inventory management",
-      tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-      image: "/placeholder.svg",
+      title: "AI Task Manager",
+      description: "Smart task management platform using AI to prioritize and organize tasks efficiently.",
+      tags: ["Next.js", "OpenAI", "TailwindCSS", "PostgreSQL"],
       color: "#6E59A5",
       links: {
-        github: "#",
-        live: "#",
+        github: "https://github.com/johndoe/ai-taskmanager",
+        live: "https://ai-taskmanager.com",
       },
     },
     {
-      title: "Real-time Dashboard",
-      description: "Data visualization dashboard with real-time updates and interactive charts",
-      tags: ["React", "D3.js", "Socket.io", "Node.js"],
-      image: "/placeholder.svg",
+      title: "Crypto Dashboard",
+      description: "Real-time cryptocurrency tracking dashboard with advanced charting and portfolio management.",
+      tags: ["React", "D3.js", "WebSocket", "Firebase"],
       color: "#8B5CF6",
       links: {
-        github: "#",
-        live: "#",
+        github: "https://github.com/johndoe/crypto-dashboard",
+        live: "https://crypto-dashboard-demo.com",
       },
     },
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio website showcasing projects and skills",
-      tags: ["Next.js", "Three.js", "Tailwind CSS", "Framer Motion"],
-      image: "/placeholder.svg",
+      title: "WebGL Game Engine",
+      description: "Lightweight browser-based game engine built with WebGL and TypeScript.",
+      tags: ["WebGL", "TypeScript", "Three.js", "Web Workers"],
       color: "#D946EF",
       links: {
-        github: "#",
+        github: "https://github.com/johndoe/webgl-engine",
       },
     },
   ];

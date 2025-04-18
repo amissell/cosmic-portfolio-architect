@@ -33,8 +33,8 @@ const LanguageItem = ({ language, proficiency, flag }) => {
 const Languages = () => {
   const languages = [
     { language: "English", proficiency: "Native", flag: "🇺🇸" },
-    { language: "Spanish", proficiency: "Fluent", flag: "🇪🇸" },
-    { language: "French", proficiency: "Intermediate", flag: "🇫🇷" },
+    { language: "French", proficiency: "Advanced", flag: "🇫🇷" },
+    { language: "Japanese", proficiency: "Intermediate", flag: "🇯🇵" },
     { language: "German", proficiency: "Basic", flag: "🇩🇪" },
   ];
 

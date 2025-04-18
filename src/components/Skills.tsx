@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Text } from "@react-three/drei";
@@ -19,9 +18,9 @@ const SkillCloud = () => {
     { name: "React", position: [1, 1, 0] as [number, number, number], size: 0.4 },
     { name: "Three.js", position: [-1, -1, 0] as [number, number, number], size: 0.5 },
     { name: "Next.js", position: [0, 1.5, 0] as [number, number, number], size: 0.4 },
-    { name: "CSS", position: [-1.5, 0.5, 0] as [number, number, number], size: 0.3 },
-    { name: "Node.js", position: [1.2, -0.8, 0] as [number, number, number], size: 0.35 },
-    { name: "TypeScript", position: [-0.8, 0.8, 0] as [number, number, number], size: 0.45 },
+    { name: "WebGL", position: [-1.5, 0.5, 0] as [number, number, number], size: 0.3 },
+    { name: "TypeScript", position: [1.2, -0.8, 0] as [number, number, number], size: 0.35 },
+    { name: "Node.js", position: [-0.8, 0.8, 0] as [number, number, number], size: 0.45 },
   ];
 
   return (
@@ -95,28 +94,28 @@ const Skills = () => {
     {
       title: "Frontend Development",
       skills: [
-        { name: "HTML & CSS", level: 95, category: "frontend" },
-        { name: "JavaScript", level: 92, category: "frontend" },
-        { name: "React", level: 90, category: "frontend" },
-        { name: "Next.js", level: 85, category: "frontend" },
+        { name: "React & Next.js", level: 95, category: "frontend" },
+        { name: "Three.js & WebGL", level: 90, category: "frontend" },
+        { name: "TypeScript", level: 88, category: "frontend" },
+        { name: "UI/UX Design", level: 85, category: "frontend" },
       ],
     },
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 80, category: "backend" },
-        { name: "Express", level: 78, category: "backend" },
-        { name: "MongoDB", level: 75, category: "backend" },
-        { name: "SQL", level: 70, category: "backend" },
+        { name: "Node.js", level: 85, category: "backend" },
+        { name: "GraphQL", level: 80, category: "backend" },
+        { name: "PostgreSQL", level: 75, category: "backend" },
+        { name: "AWS", level: 70, category: "backend" },
       ],
     },
     {
       title: "Other Skills",
       skills: [
-        { name: "Three.js & WebGL", level: 85, category: "other" },
-        { name: "TypeScript", level: 88, category: "other" },
-        { name: "Git & CI/CD", level: 80, category: "other" },
-        { name: "UI/UX Design", level: 75, category: "other" },
+        { name: "3D Modeling", level: 85, category: "other" },
+        { name: "WebRTC", level: 80, category: "other" },
+        { name: "Performance Optimization", level: 85, category: "other" },
+        { name: "Technical Writing", level: 75, category: "other" },
       ],
     },
   ];

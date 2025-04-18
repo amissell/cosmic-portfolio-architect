@@ -54,7 +54,7 @@ const Contact = () => {
           Get In <span className="text-portfolio-purple">Touch</span>
         </h2>
         <p className="text-gray-700 max-w-2xl mx-auto">
-          Have a project in mind or just want to say hello? I'd love to hear from you!
+          Interested in collaboration or have a project in mind? Let's connect and create something amazing together!
         </p>
         
         {/* 3D Element */}
@@ -78,8 +78,8 @@ const Contact = () => {
               <Mail className="text-portfolio-purple mr-3 mt-1" size={20} />
               <div>
                 <p className="font-medium text-gray-800">Email</p>
-                <a href="mailto:hello@example.com" className="text-gray-600 hover:text-portfolio-purple transition-colors">
-                  hello@example.com
+                <a href="mailto:john.doe@example.com" className="text-gray-600 hover:text-portfolio-purple transition-colors">
+                  john.doe@example.com
                 </a>
               </div>
             </div>
@@ -88,8 +88,8 @@ const Contact = () => {
               <Phone className="text-portfolio-purple mr-3 mt-1" size={20} />
               <div>
                 <p className="font-medium text-gray-800">Phone</p>
-                <a href="tel:+11234567890" className="text-gray-600 hover:text-portfolio-purple transition-colors">
-                  +1 (123) 456-7890
+                <a href="tel:+12345678900" className="text-gray-600 hover:text-portfolio-purple transition-colors">
+                  +1 (234) 567-8900
                 </a>
               </div>
             </div>

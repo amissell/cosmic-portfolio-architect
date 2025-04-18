@@ -35,23 +35,23 @@ const Experience = () => {
   const experiences = [
     {
       title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2020 - Present",
-      description: "Lead the development of responsive web applications using React, Next.js, and TypeScript. Implemented WebGL and Three.js for interactive 3D visualizations.",
+      company: "TechCorp Solutions",
+      period: "2021 - Present",
+      description: "Leading a team of developers in building enterprise-scale React applications. Implemented WebGL visualizations that increased user engagement by 40%.",
       icon: Code,
     },
     {
-      title: "Web Developer",
-      company: "Digital Solutions Agency",
-      period: "2018 - 2020",
-      description: "Developed and maintained client websites and web applications. Worked with JavaScript, CSS frameworks, and various CMS platforms.",
+      title: "Full Stack Developer",
+      company: "Digital Innovations Lab",
+      period: "2019 - 2021",
+      description: "Developed and deployed full-stack applications using Next.js and Node.js. Created real-time collaboration features used by 10,000+ users.",
       icon: Laptop,
     },
     {
       title: "Junior Developer",
-      company: "StartUp Ventures",
-      period: "2016 - 2018",
-      description: "Assisted in developing web applications and implementing responsive designs. Worked with HTML, CSS, JavaScript, and basic React components.",
+      company: "WebTech Startups",
+      period: "2018 - 2019",
+      description: "Contributed to various startup projects, focusing on frontend development with React and Vue.js. Implemented responsive designs and animations.",
       icon: Building2,
     },
   ];
