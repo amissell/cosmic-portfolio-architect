@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Text } from "@react-three/drei";
 
 // 3D Skill Icon
-const SkillIcon = ({ color = "#9b87f5", position = [0, 0, 0], size = 0.5 }) => {
+const SkillIcon = ({ color = "#9b87f5", position = [0, 0, 0] as [number, number, number], size = 0.5 }) => {
   return (
     <mesh position={position}>
       <octahedronGeometry args={[size, 0]} />
@@ -16,12 +16,12 @@ const SkillIcon = ({ color = "#9b87f5", position = [0, 0, 0], size = 0.5 }) => {
 // 3D Skill Cloud
 const SkillCloud = () => {
   const skills = [
-    { name: "React", position: [1, 1, 0], size: 0.4 },
-    { name: "Three.js", position: [-1, -1, 0], size: 0.5 },
-    { name: "Next.js", position: [0, 1.5, 0], size: 0.4 },
-    { name: "CSS", position: [-1.5, 0.5, 0], size: 0.3 },
-    { name: "Node.js", position: [1.2, -0.8, 0], size: 0.35 },
-    { name: "TypeScript", position: [-0.8, 0.8, 0], size: 0.45 },
+    { name: "React", position: [1, 1, 0] as [number, number, number], size: 0.4 },
+    { name: "Three.js", position: [-1, -1, 0] as [number, number, number], size: 0.5 },
+    { name: "Next.js", position: [0, 1.5, 0] as [number, number, number], size: 0.4 },
+    { name: "CSS", position: [-1.5, 0.5, 0] as [number, number, number], size: 0.3 },
+    { name: "Node.js", position: [1.2, -0.8, 0] as [number, number, number], size: 0.35 },
+    { name: "TypeScript", position: [-0.8, 0.8, 0] as [number, number, number], size: 0.45 },
   ];
 
   return (
