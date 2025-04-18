@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF, Environment, PresentationControls } from "@react-three/drei";
+import { PresentationControls } from "@react-three/drei";
 import { ChevronDown } from "lucide-react";
 
 // Fallback 3D geometry when loading
@@ -49,9 +49,10 @@ const Hero = () => {
         <Canvas camera={{ position: [0, 0, 6] as [number, number, number], fov: 45 }}>
           <ambientLight intensity={0.5} />
           <spotLight position={[10, 10, 10] as [number, number, number]} angle={0.15} penumbra={1} intensity={1} castShadow />
+          <directionalLight position={[-5, 5, 5] as [number, number, number]} intensity={1} />
           <PresentationControls
             global
-            rotation={[0, 0, 0]}
+            rotation={[0, 0, 0] as [number, number, number]}
             polar={[-0.4, 0.2]}
             azimuth={[-0.5, 0.5]}
             config={{ mass: 2, tension: 400 }}
@@ -59,7 +60,6 @@ const Hero = () => {
           >
             <Model />
           </PresentationControls>
-          <Environment preset="city" />
         </Canvas>
       </div>
 
