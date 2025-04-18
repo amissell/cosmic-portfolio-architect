@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 // 3D Contact Element
 const ContactElement = () => {
   return (
-    <mesh rotation={[0, 0, 0]}>
+    <mesh rotation={[0, 0, 0] as [number, number, number]}>
       <torusGeometry args={[1, 0.3, 16, 100]} />
       <meshStandardMaterial color="#9b87f5" />
     </mesh>
@@ -59,9 +59,9 @@ const Contact = () => {
         
         {/* 3D Element */}
         <div className="h-[150px] w-full my-8">
-          <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
+          <Canvas camera={{ position: [0, 0, 3] as [number, number, number], fov: 50 }}>
             <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
+            <pointLight position={[10, 10, 10] as [number, number, number]} />
             <Float speed={1.5} rotationIntensity={0.3} floatIntensity={0.3}>
               <ContactElement />
             </Float>

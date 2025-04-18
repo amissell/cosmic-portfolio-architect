@@ -6,7 +6,7 @@ import { Globe } from "lucide-react";
 // 3D Globe Component
 const Globe3D = () => {
   return (
-    <mesh rotation={[0, 0, 0]}>
+    <mesh rotation={[0, 0, 0] as [number, number, number]}>
       <sphereGeometry args={[1.2, 32, 32]} />
       <meshStandardMaterial 
         color="#9b87f5" 
@@ -51,9 +51,9 @@ const Languages = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="h-[300px]">
-          <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
+          <Canvas camera={{ position: [0, 0, 3] as [number, number, number], fov: 50 }}>
             <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
+            <pointLight position={[10, 10, 10] as [number, number, number]} />
             <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.2}>
               <Globe3D />
             </Float>

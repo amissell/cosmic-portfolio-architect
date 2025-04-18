@@ -6,7 +6,7 @@ import { GraduationCap, Award, Calendar } from "lucide-react";
 // 3D Diploma Component
 const Diploma = () => {
   return (
-    <mesh rotation={[0, 0, 0]}>
+    <mesh rotation={[0, 0, 0] as [number, number, number]}>
       <cylinderGeometry args={[0.8, 0.8, 0.2, 32]} />
       <meshStandardMaterial color="#9b87f5" />
     </mesh>
@@ -85,9 +85,9 @@ const Education = () => {
         
         {/* 3D Diploma Animation */}
         <div className="h-[150px] w-full my-8">
-          <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
+          <Canvas camera={{ position: [0, 0, 3] as [number, number, number], fov: 50 }}>
             <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
+            <pointLight position={[10, 10, 10] as [number, number, number]} />
             <Float speed={2} rotationIntensity={0.4} floatIntensity={0.4}>
               <Diploma />
             </Float>

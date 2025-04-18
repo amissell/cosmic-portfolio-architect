@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Float, OrbitControls } from "@react-three/drei";
@@ -5,14 +6,14 @@ import { Github, ExternalLink } from "lucide-react";
 
 const ProjectIcon = ({ color = "#9b87f5" }) => {
   return (
-    <mesh rotation={[0, 0, 0]}>
+    <mesh rotation={[0, 0, 0] as [number, number, number]}>
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={color} />
     </mesh>
   );
 };
 
-const ProjectCard = ({ title, description, tags, image, links, color }) => {
+const ProjectCard = ({ title, description, tags, links, color }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -23,9 +24,9 @@ const ProjectCard = ({ title, description, tags, image, links, color }) => {
     >
       <div className="relative">
         <div className="h-[200px] w-full relative">
-          <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
+          <Canvas camera={{ position: [0, 0, 3] as [number, number, number], fov: 50 }}>
             <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
+            <pointLight position={[10, 10, 10] as [number, number, number]} />
             <Float 
               speed={hovered ? 3 : 1} 
               rotationIntensity={hovered ? 0.6 : 0.2} 

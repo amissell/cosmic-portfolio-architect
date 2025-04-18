@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Text } from "@react-three/drei";
@@ -139,9 +140,9 @@ const Skills = () => {
         </div>
         
         <div className="h-[500px]">
-          <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
+          <Canvas camera={{ position: [0, 0, 5] as [number, number, number], fov: 50 }}>
             <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
+            <pointLight position={[10, 10, 10] as [number, number, number]} />
             <SkillCloud />
             <OrbitControls 
               autoRotate 

@@ -17,7 +17,7 @@ const Placeholder = () => {
 // 3D Model for the hero section
 const Model = () => {
   return (
-    <mesh rotation={[0, Math.PI / 4, 0]}>
+    <mesh rotation={[0, Math.PI / 4, 0] as [number, number, number]}>
       <dodecahedronGeometry args={[1.5, 2]} />
       <meshStandardMaterial 
         color="#9b87f5" 
@@ -46,9 +46,9 @@ const Hero = () => {
     <div className="h-screen relative overflow-hidden flex flex-col justify-center items-center">
       {/* 3D Background */}
       <div className="absolute inset-0 -z-10">
-        <Canvas camera={{ position: [0, 0, 6], fov: 45 }}>
+        <Canvas camera={{ position: [0, 0, 6] as [number, number, number], fov: 45 }}>
           <ambientLight intensity={0.5} />
-          <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
+          <spotLight position={[10, 10, 10] as [number, number, number]} angle={0.15} penumbra={1} intensity={1} castShadow />
           <PresentationControls
             global
             rotation={[0, 0, 0]}

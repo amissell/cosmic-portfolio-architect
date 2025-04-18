@@ -23,7 +23,7 @@ const ExperienceItem = ({ title, company, period, description, icon: Icon }) => 
 const Float3DIcon = () => {
   return (
     <Float speed={2} rotationIntensity={0.4} floatIntensity={0.4}>
-      <mesh rotation={[0, 0, 0]}>
+      <mesh rotation={[0, 0, 0] as [number, number, number]}>
         <torusKnotGeometry args={[0.7, 0.2, 128, 32]} />
         <meshStandardMaterial color="#9b87f5" />
       </mesh>
@@ -69,9 +69,9 @@ const Experience = () => {
         
         {/* 3D Canvas Container */}
         <div className="h-[150px] w-full my-8">
-          <Canvas camera={{ position: [0, 0, 4], fov: 50 }}>
+          <Canvas camera={{ position: [0, 0, 4] as [number, number, number], fov: 50 }}>
             <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
+            <pointLight position={[10, 10, 10] as [number, number, number]} />
             <Float3DIcon />
           </Canvas>
         </div>
