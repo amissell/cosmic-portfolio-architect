@@ -78,8 +78,8 @@ const Contact = () => {
               <Mail className="text-portfolio-purple mr-3 mt-1" size={20} />
               <div>
                 <p className="font-medium text-gray-800">Email</p>
-                <a href="mailto:john.doe@example.com" className="text-gray-600 hover:text-portfolio-purple transition-colors">
-                  john.doe@example.com
+                <a href="mailto:amal.issellay@example.com" className="text-gray-600 hover:text-portfolio-purple transition-colors">
+                  amal.issellay@example.com
                 </a>
               </div>
             </div>
@@ -88,8 +88,8 @@ const Contact = () => {
               <Phone className="text-portfolio-purple mr-3 mt-1" size={20} />
               <div>
                 <p className="font-medium text-gray-800">Phone</p>
-                <a href="tel:+12345678900" className="text-gray-600 hover:text-portfolio-purple transition-colors">
-                  +1 (234) 567-8900
+                <a href="tel:0651180913" className="text-gray-600 hover:text-portfolio-purple transition-colors">
+                  0651180913
                 </a>
               </div>
             </div>
@@ -98,13 +98,17 @@ const Contact = () => {
           <h3 className="text-xl font-semibold mb-4 text-portfolio-charcoal">Connect With Me</h3>
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://github.com/amissell"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-portfolio-purple hover:text-white transition-colors"
             >
               <Github size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/amal-issellay-864827286/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-portfolio-purple hover:text-white transition-colors"
             >
               <Linkedin size={20} />

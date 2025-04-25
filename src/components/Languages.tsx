@@ -1,4 +1,3 @@
-
 import { Canvas } from "@react-three/fiber";
 import { Float, Text } from "@react-three/drei";
 import { Globe } from "lucide-react";
@@ -32,10 +31,9 @@ const LanguageItem = ({ language, proficiency, flag }) => {
 
 const Languages = () => {
   const languages = [
-    { language: "English", proficiency: "Native", flag: "🇺🇸" },
-    { language: "French", proficiency: "Advanced", flag: "🇫🇷" },
-    { language: "Japanese", proficiency: "Intermediate", flag: "🇯🇵" },
-    { language: "German", proficiency: "Basic", flag: "🇩🇪" },
+    { language: "Arabic", proficiency: "Native", flag: "🇲🇦" },
+    { language: "English", proficiency: "Fluent", flag: "🇬🇧" },
+    { language: "French", proficiency: "Intermediate", flag: "🇫🇷" },
   ];
 
   return (

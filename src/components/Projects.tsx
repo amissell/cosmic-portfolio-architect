@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Float, OrbitControls } from "@react-three/drei";
@@ -86,42 +85,30 @@ const ProjectCard = ({ title, description, tags, links, color }) => {
 const Projects = () => {
   const projects = [
     {
-      title: "3D Virtual Gallery",
-      description: "An immersive virtual art gallery built with Three.js and React, featuring interactive exhibitions and real-time collaboration.",
-      tags: ["React", "Three.js", "WebGL", "Socket.io"],
+      title: "GiveLink Homepage",
+      description: "A modern, responsive homepage built with React, Blade templates, and Tailwind CSS for a Laravel web application.",
+      tags: ["React", "Laravel", "Tailwind CSS", "Blade"],
       color: "#9b87f5",
       links: {
-        github: "https://github.com/johndoe/virtual-gallery",
-        live: "https://virtual-gallery-demo.com",
+        github: "https://github.com/amissell",
       },
     },
     {
-      title: "AI Task Manager",
-      description: "Smart task management platform using AI to prioritize and organize tasks efficiently.",
-      tags: ["Next.js", "OpenAI", "TailwindCSS", "PostgreSQL"],
+      title: "PHP MVC Architecture",
+      description: "Created a secure, optimized architecture using PHP for a web app that includes advanced routing, authentication, and role management.",
+      tags: ["PHP", "MVC", "Laravel", "Security"],
       color: "#6E59A5",
       links: {
-        github: "https://github.com/johndoe/ai-taskmanager",
-        live: "https://ai-taskmanager.com",
+        github: "https://github.com/amissell",
       },
     },
     {
-      title: "Crypto Dashboard",
-      description: "Real-time cryptocurrency tracking dashboard with advanced charting and portfolio management.",
-      tags: ["React", "D3.js", "WebSocket", "Firebase"],
+      title: "Reservation Management",
+      description: "Built in C to handle reservation details with modifications, providing statistical insights and usage analytics.",
+      tags: ["C", "Data Structures", "Analytics"],
       color: "#8B5CF6",
       links: {
-        github: "https://github.com/johndoe/crypto-dashboard",
-        live: "https://crypto-dashboard-demo.com",
-      },
-    },
-    {
-      title: "WebGL Game Engine",
-      description: "Lightweight browser-based game engine built with WebGL and TypeScript.",
-      tags: ["WebGL", "TypeScript", "Three.js", "Web Workers"],
-      color: "#D946EF",
-      links: {
-        github: "https://github.com/johndoe/webgl-engine",
+        github: "https://github.com/amissell",
       },
     },
   ];

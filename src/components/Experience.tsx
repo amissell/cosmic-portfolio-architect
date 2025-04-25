@@ -34,24 +34,24 @@ const Float3DIcon = () => {
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Frontend Developer",
-      company: "TechCorp Solutions",
-      period: "2021 - Present",
-      description: "Leading a team of developers in building enterprise-scale React applications. Implemented WebGL visualizations that increased user engagement by 40%.",
+      title: "Frontend Developer",
+      company: "GiveLink Project",
+      period: "2025 - Present",
+      description: "Building a modern homepage using React, Blade templates, and Tailwind CSS for a Laravel web application.",
       icon: Code,
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Innovations Lab",
-      period: "2019 - 2021",
-      description: "Developed and deployed full-stack applications using Next.js and Node.js. Created real-time collaboration features used by 10,000+ users.",
+      title: "PHP MVC Developer",
+      company: "Personal Project",
+      period: "2025",
+      description: "Developed a full-fledged MVC architecture for a Laravel web application, focusing on optimization and security best practices.",
       icon: Laptop,
     },
     {
-      title: "Junior Developer",
-      company: "WebTech Startups",
-      period: "2018 - 2019",
-      description: "Contributed to various startup projects, focusing on frontend development with React and Vue.js. Implemented responsive designs and animations.",
+      title: "Library Assistant",
+      company: "Local Library",
+      period: "Previous Role",
+      description: "Gained valuable organizational and communication skills while assisting patrons and managing resources.",
       icon: Building2,
     },
   ];
